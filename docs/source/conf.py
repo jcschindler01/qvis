@@ -22,7 +22,7 @@ copyright = '2019, J C Schindler'
 author = 'J C Schindler'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
