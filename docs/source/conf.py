@@ -35,6 +35,10 @@ extensions = [
    'sphinx.ext.napoleon',
 ]
 
+# autodoc settings
+autodoc_member_order = 'groupwise'
+autodoc_mock_imports = ['numpy','matplotlib']
+
 # Napoleon settings
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
