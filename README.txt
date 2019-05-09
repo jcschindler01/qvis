@@ -1,1 +1,1 @@
-qlat: A Python package for visualizing quantum lattice systems.
+qvis: A Python package for visualizing quantum fields and quantum lattice systems.
