@@ -41,6 +41,7 @@ extensions = [
 # autodoc settings
 autodoc_member_order = 'groupwise'
 autodoc_mock_imports = ['numpy']
+autoclass_content = 'both'
 
 # Napoleon settings
 napoleon_google_docstring = True
