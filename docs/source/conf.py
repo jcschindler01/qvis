@@ -54,7 +54,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -71,4 +71,3 @@ html_static_path = ['_static']
 
 # Change sidebar. Method from stackexchange (https://stackoverflow.com/questions/18969093/how-to-include-the-toctree-in-the-sidebar-of-each-page).
 html_sidebars = { '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'] }
-
