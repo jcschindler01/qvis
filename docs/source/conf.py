@@ -27,6 +27,9 @@ release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 
+# Master doc
+master_doc = 'index'
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -37,7 +40,7 @@ extensions = [
 
 # autodoc settings
 autodoc_member_order = 'groupwise'
-autodoc_mock_imports = ['numpy','matplotlib']
+autodoc_mock_imports = ['numpy']
 
 # Napoleon settings
 napoleon_google_docstring = True
