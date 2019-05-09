@@ -8,11 +8,17 @@ qvis = "Quantum Visualization"
 
 .. automodule:: qvis
 
+Enjoy!
+
+Packages and Modules
+====================
+
 .. toctree::
+   :caption: Packages and Modules:
    :maxdepth: 2
 
    api/qvis/qvis
-   
+
    api/qvis/kgwave/kgwave
    api/qvis/kgwave/psi
 
