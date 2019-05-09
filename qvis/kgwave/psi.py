@@ -13,6 +13,9 @@ class psi:
 	"""
 
 	def __init__(self, n, cn, mu):
+		"""
+		Init.
+		"""
 		## attributes
 		self.mm = 1. * np.pi * mu
 		self.n  = 1. * n.astype(float)
