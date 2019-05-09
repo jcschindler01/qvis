@@ -36,11 +36,12 @@ master_doc = 'index'
 extensions = [
    'sphinx.ext.autodoc',
    'sphinx.ext.napoleon',
+   'sphinx.ext.mathjax',
 ]
 
 # autodoc settings
 autodoc_member_order = 'groupwise'
-autodoc_mock_imports = ['numpy']
+autodoc_mock_imports = ['numpy','scipy','matplotlib']
 autoclass_content = 'class'
 
 # Napoleon settings
