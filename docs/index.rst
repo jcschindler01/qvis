@@ -3,16 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to qvis's documentation!
+qvis = "Quantum Visualization"
 ================================
+
+.. automodule:: qvis
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   api/qvis/qvis
+   
+   api/qvis/kgwave/kgwave
+   api/qvis/kgwave/psi
 
 
 
-Indices and tables
+Search
 ==================
 
 * :ref:`genindex`
