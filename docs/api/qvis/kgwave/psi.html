@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>qvis.kgwave.psi &#8212; qvis 1.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="qvis.kgwave" href="kgwave.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="kgwave.html" title="qvis.kgwave"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">qvis 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-qvis.kgwave.psi">
+<span id="qvis-kgwave-psi"></span><h1>qvis.kgwave.psi<a class="headerlink" href="#module-qvis.kgwave.psi" title="Permalink to this headline">¶</a></h1>
+<p>Classical solution based on positive-frequency complex solution.</p>
+<dl class="class">
+<dt id="qvis.kgwave.psi.psi">
+<em class="property">class </em><code class="descclassname">qvis.kgwave.psi.</code><code class="descname">psi</code><span class="sig-paren">(</span><em>n</em>, <em>cn</em>, <em>mu</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solution of wave equation.</p>
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.energy">
+<code class="descname">energy</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>H = (1/2) * ( ydot^2 + yprime^2 + m^2 y^2)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.psi">
+<code class="descname">psi</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.psi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Positive freq complex solution.
+psi(x,t) = sum_k c_k e^(-iw(k)t) sqrt(2) sin(kx)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.psidot">
+<code class="descname">psidot</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.psidot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time derivative.
+psidot(x,t) = sum_k (-iw(k)c_k) e^(-iw(k)t) sqrt(2) sin(kx)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.psiprime">
+<code class="descname">psiprime</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.psiprime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Spatial derivative.
+psi(x,t) = sum_k k c_k e^(-iw(k)t) sqrt(2) cos(kx)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.y">
+<code class="descname">y</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Real part.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.ydot">
+<code class="descname">ydot</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.ydot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Real part.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qvis.kgwave.psi.psi.yprime">
+<code class="descname">yprime</code><span class="sig-paren">(</span><em>x</em>, <em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi.yprime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Real part.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="qvis.kgwave.psi.psi_from_init">
+<code class="descclassname">qvis.kgwave.psi.</code><code class="descname">psi_from_init</code><span class="sig-paren">(</span><em>x0</em>, <em>y0</em>, <em>ydot0</em>, <em>mu</em>, <em>nmax=10</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi_from_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine cn based on initial data for 1 &lt;= n &lt;= nmax.
+Formula is
+c_k = xi_k . chi_k
+where
+xi_k = sqrt(2) sin(kx)
+and
+chi_k = y0 + i ydot0 / w_k .</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="qvis.kgwave.psi.psi_from_wavefunction">
+<code class="descclassname">qvis.kgwave.psi.</code><code class="descname">psi_from_wavefunction</code><span class="sig-paren">(</span><em>x0</em>, <em>psi0</em>, <em>mu</em>, <em>nmax=10</em><span class="sig-paren">)</span><a class="headerlink" href="#qvis.kgwave.psi.psi_from_wavefunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine cn based on initial data for 1 &lt;= n &lt;= nmax.
+Formula is
+c_k = xi_k . psi0.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../qvis.html">qvis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kgwave.html">qvis.kgwave</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">qvis.kgwave.psi</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/api/qvis/kgwave/psi.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="kgwave.html" title="qvis.kgwave"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">qvis 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, J C Schindler.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
+    </div>
+  </body>
+</html>
