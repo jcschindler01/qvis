@@ -13,6 +13,16 @@ class psi:
 	"""
 
 	def __init__(self, n, cn, mu):
+		"""
+		Parameters
+		----------
+		n: array
+			Nonzero coeff slots.
+		cn: array like n
+			Nonzero coeffs.
+		mu: float
+			Mass.
+		"""
 		## attributes
 		self.mm = 1. * np.pi * mu
 		self.n  = 1. * n.astype(float)
