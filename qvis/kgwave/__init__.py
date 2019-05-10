@@ -97,10 +97,12 @@ The proper density :math:`\\rho` and (minus the) proper pressure :math:`-p` are 
 Define :math:`\\alpha=- \\, \\partial_t \\varphi/\\partial_x \\varphi`. One generally expects :math:`|\\alpha|>1` (since :math:`|\\omega| > |k|`). Let us suppose, for the time being, this holds true. Then by diagonalizing the stress tensor one obtains
 
 .. math::
-   \\rho &= \\mathcal{H} - (\\partial_x \\varphi)^2 > 0 \\qquad & &\\textrm{with eigenvector} \\qquad &  &(\\alpha,1) \\\\
+   \\rho &= \\mathcal{H} - (\\partial_x \\varphi)^2 \\qquad & &\\textrm{with eigenvector} \\qquad &  &(\\alpha,1) \\\\
    -p    &= \\mathcal{H} - (\\partial_t \\varphi)^2 \\qquad & &\\textrm{with eigenvector} \\qquad & &(1,\\alpha).
 
-It's easy to check that the eigenvectors are orthonormal, and also that both :math:`\\rho>0` and :math:`\\rho+p>0` explicitly, so both NEC and WEC are satisfied. 
+It's easy to check that the eigenvectors are orthonormal, and also that both :math:`\\rho>0` and :math:`\\rho+p>0` explicitly, so both NEC and WEC are satisfied. Also, :math:`\\rho^2 - p^2 = m^2 \\varphi^2 \\, ((\\partial_t \\varphi)^2 - (\\partial_x \\varphi)^2) \\geq 0`, so FEC is also satisfied.
+
+Energy conditions are only possible, therefore, if :math:`|\\alpha| \\leq 1`.
 
 
 
