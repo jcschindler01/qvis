@@ -102,7 +102,7 @@ Define :math:`\\alpha=- \\, \\partial_t \\varphi/\\partial_x \\varphi`. One gene
 
 It's easy to check that the eigenvectors are orthonormal, and also that both :math:`\\rho>0` and :math:`\\rho+p>0` explicitly, so both NEC and WEC are satisfied. Also, :math:`\\rho^2 - p^2 = m^2 \\varphi^2 \\, ((\\partial_t \\varphi)^2 - (\\partial_x \\varphi)^2) \\geq 0`, so FEC is also satisfied.
 
-Energy conditions are only possible, therefore, if :math:`|\\alpha| \\leq 1`.
+Energy conditions violations are only possible, therefore, if :math:`|\\alpha| \\leq 1`.
 
 
 
