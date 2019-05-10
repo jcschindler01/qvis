@@ -15,7 +15,7 @@ Packages and Modules
 
 .. toctree::
    :caption: Packages and Modules:
-   :maxdepth: 2
+   :maxdepth: 1
 
    api/qvis/qvis
 
