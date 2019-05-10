@@ -30,7 +30,7 @@ Consider the flat-space (1+1)d massive KG wave equation
 
 for a real scalar field :math:`\\varphi`, on the interval (0, L/2) with closed (:math:`\\varphi` =0) boundary conditions.
 
-Choose mass :math:`m=2\\pi` and measure space and time in units of the Compton wavelength :math:`\\lambda_m = 2\\pi/m =1`. The Compton wavenumber is :math:`k_m = 2 \\pi / \\lambda_m = 2\\pi \\, m`.
+Choose mass :math:`m=2\\pi` and measure space and time in units of the Compton wavelength :math:`\\lambda_m = 2\\pi/m =1`. The Compton wavenumber is :math:`k_m = 2 \\pi / \\lambda_m = m`.
 
 You can immediately read off the dispersion relation
 
